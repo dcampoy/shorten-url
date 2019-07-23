@@ -5,13 +5,13 @@ https://aqueous-hollows-46233.herokuapp.com/
 ## How it works
 
 ### Web interface
-Enter the target url to be shortened
+#### Enter the target url to be shortened
 ![homepage](https://github.com/dcampoy/shorten-url/blob/master/doc/step-1.png)
 
-And copy the shortened link
+#### And copy the shortened link
 ![infopage](https://github.com/dcampoy/shorten-url/blob/master/doc/step-2.png)
 
-Come back to this page to know how many hits the link had
+#### Come back to this page to know how many hits the link had
 ![stats](https://github.com/dcampoy/shorten-url/blob/master/doc/step-3.png)
 
 ### Command line interface (local)
