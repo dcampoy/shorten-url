@@ -66,6 +66,11 @@ h1,h2,h3,h4,h5,h6 {
   font-size: 32px;
 }
 
+.header__content a {
+  text-decoration: none;
+  color: var(--c-dark-accent);
+}
+
 @media (max-width: 780px) {
   .header__content {
     padding: 0 10px;
