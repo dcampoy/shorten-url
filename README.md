@@ -6,13 +6,13 @@ https://aqueous-hollows-46233.herokuapp.com/
 
 ### Web interface
 Enter the target url to be shortened
-[[https://github.com/dcampoy/shorten-url/blob/master/doc/step-1.png|alt=homepage]]
+![homepage](https://github.com/dcampoy/shorten-url/blob/master/doc/step-1.png)
 
 And copy the shortened link
-[[https://github.com/dcampoy/shorten-url/blob/master/doc/step-2.png|alt=infopage]]
+![infopage](https://github.com/dcampoy/shorten-url/blob/master/doc/step-2.png)
 
 Come back to this page to know how many hits the link had
-[[https://github.com/dcampoy/shorten-url/blob/master/doc/step-3.png|alt=stats]]
+![stats](https://github.com/dcampoy/shorten-url/blob/master/doc/step-3.png)
 
 ### Command line interface (local)
 
