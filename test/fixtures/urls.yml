@@ -2,8 +2,8 @@
 
 one:
   code: '00001'
-  url: MyString
+  url: 'https://mealness.co.uk/1'
 
 two:
   code: '00002'
-  url: MyString
+  url: 'https://mealness.co.uk/2'
