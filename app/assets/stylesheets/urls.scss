@@ -47,6 +47,13 @@ $layout-breakpoint-medium: 800px;
       flex: 0 0 100%;
     }
   }
+
+  &__error {
+    padding-top: 15px;
+    &:empty {
+      display: none;
+    }
+  }
 }
 
 .value-prop {

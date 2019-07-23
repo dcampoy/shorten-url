@@ -2,9 +2,10 @@
   <div class='shorten-form__content'>
     <div class='shorten-form__title'>Paste the URL to be shorten</div>
     <%= form_for(@url, :html => { class: 'shorten-form__form' } ) do |f| %>
-      <%= f.text_field :url, class: 'shorten-form__input', placeholder: 'Enter url here...' %>
+      <%= f.text_field :url, class: 'shorten-form__input', placeholder: 'Enter url here...', required: true %>
       <%= f.submit "Shorten", class: 'shorten-form__button button button--primary' %>
     <% end %>
+    <div class='shorten-form__error'><%= @url.errors.any? ? 'Please provide a valid URL' : '' %></div>
   </div>
 </div>
 
