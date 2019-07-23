@@ -17,10 +17,11 @@
     --c-main-brand: #03a9f4;
     --c-main-highlight: #6ad1ff;
     --c-dark-accent: #003d58;
-    --gutter: 10px;
+    --gutter: 15px;
     --fs-small: 14px;
     --fs-medium: 16px;
     --fs-big: 20px;
+    --fs-bigger: 32px;
 }
 
 body {
@@ -29,6 +30,11 @@ body {
   margin: 0;
   padding: 0;
   color: var(--c-dark-accent);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
 }
 
 .layout {

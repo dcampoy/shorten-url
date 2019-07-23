@@ -1,14 +1,38 @@
-<p id="notice"><%= notice %></p>
+<div class='url-details'>
+  <div class='url-details__content'>
+    <h2>URL</h2>
+    <div class='url-details__url'>
+      <input type='text' class='url-details__input' value='<%=  @shortenUrl %>' readonly>
+      <button class='url-details__copy button button--primary'>Copy</button>
+    </div>
+    <div class='url-details__item'>
+      Original URL: <%= link_to @url.url, @url.url, target: '_blank' %>
+    </div>
+  </div>
+</div>
 
-<p>
-  <strong>Code:</strong>
-  <%= @url.code %>
-</p>
+<div class='stats'>
+  <div class='stats__content'>
+    <h2>Stats</h2>
+    <div class='stats__items'>
+      <div class='stats__item'>
+        <div class='stats__header'>Total hits</div>
+        <div class='stats__body'><%= @url.hits.count %></div>
+        <div class='stats__footer'>Last week XX hits</div>
+      </div>
 
-<p>
-  <strong>Url:</strong>
-  <%= @url.url %>
-</p>
+      <div class='stats__item'>
+        <div class='stats__header'>Total users</div>
+        <div class='stats__body'>XX</div>
+        <div class='stats__footer'>Last week XX users</div>
+      </div>
 
-<%= link_to 'Edit', edit_url_path(@url) %> |
-<%= link_to 'Back', urls_path %>
+      <div class='stats__item'>
+        <div class='stats__header'>Total invalid hits</div>
+        <div class='stats__body'>XX</div>
+        <div class='stats__footer'>Last week XX hits</div>
+      </div>
+    </div>
+  </div>
+</div>
+

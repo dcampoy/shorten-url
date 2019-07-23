@@ -10,6 +10,7 @@ class UrlsController < ApplicationController
   # GET /urls/1
   # GET /urls/1.json
   def show
+    @shortenUrl = request.base_url + '/r/' + @url.code
   end
 
   # GET /urls/new
