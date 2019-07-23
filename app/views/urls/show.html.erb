@@ -2,8 +2,8 @@
   <div class='url-details__content'>
     <h2>URL</h2>
     <div class='url-details__url'>
-      <input type='text' class='url-details__input' value='<%=  @shortenUrl %>' readonly>
-      <button class='url-details__copy button button--primary'>Copy</button>
+      <input id='url-details__input' type='text' class='url-details__input' value='<%=  @shortenUrl %>' readonly>
+      <button id='url-details__copy' class='url-details__copy button button--primary'>Copy</button>
     </div>
     <div class='url-details__item'>
       Original URL: <%= link_to @url.url, @url.url, target: '_blank' %>
