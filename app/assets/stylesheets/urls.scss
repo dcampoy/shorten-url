@@ -1,3 +1,77 @@
-// Place all the styles related to the Urls controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$layout-breakpoint-small: 400px;
+$layout-breakpoint-medium: 800px;
+
+.shorten-form {
+  padding: 60px 15px;
+  margin-bottom: 30px;
+  background-color: #eee;
+
+  &__content {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    background-color: white;
+    box-shadow: 1px 1px 5px #8888;
+    box-sizing: border-box;
+
+    @media (max-width: $layout-breakpoint-medium) {
+      padding: 30px 10px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    padding-bottom: 1em;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__input {
+    flex: 1 0;
+    padding: 0.5em 1em;
+    font-size: var(--fs-normal);
+    border: 2px solid #eee;
+    outline: none;
+
+    &:focus {
+      border: 2px solid var(--c-main-brand);
+    }
+  }
+
+  &__button {
+    flex: 0 0 150px;
+    @media (max-width: $layout-breakpoint-small) {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+.value-prop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 0;
+
+  @media (max-width: $layout-breakpoint-medium) {
+    padding: 0 10px;
+  }
+
+  &__item {
+    width: 300px;
+    text-align: center;
+    margin: 0 10px 20px;
+  }
+
+  &__title {
+    font-size: var(--fs-big);
+    color: var(--c-main-brand);
+  }
+
+  &__img {
+    width: 50%;
+  }
+}

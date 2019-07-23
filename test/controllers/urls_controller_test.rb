@@ -11,7 +11,7 @@ class UrlsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get new" do
-    get new_url_url
+    get root_path
     assert_response :success
   end
 

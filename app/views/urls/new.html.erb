@@ -1,5 +1,22 @@
-<h1>New Url</h1>
+<div class='shorten-form'>
+  <div class='shorten-form__content'>
+    <div class='shorten-form__title'>Paste the URL to be shorten</div>
+    <%= form_for(@url, :html => { class: 'shorten-form__form' } ) do |f| %>
+      <%= f.text_field :url, class: 'shorten-form__input', placeholder: 'Enter url here...' %>
+      <%= f.submit "Shorten", class: 'shorten-form__button button button--primary' %>
+    <% end %>
+  </div>
+</div>
 
-<%= render 'form', url: @url %>
-
-<%= link_to 'Back', urls_path %>
+<div class='value-prop'>
+  <div class='value-prop__item'>
+    <div class='value-prop__title'>Easy to remember</div>
+    <%= image_tag('remember.png', alt: '', class: 'value-prop__img') %>
+    <div class='value-prop__desc'>Shorter urls are easier to share, tweet and email.</div>
+  </div>
+  <div class='value-prop__item'>
+    <div class='value-prop__title'>Statistic</div>
+    <%= image_tag('stats.png', alt: '', class: 'value-prop__img') %>
+    <div class='value-prop__desc'>Track the impact of your campaigns.</div>
+  </div>
+</div>
