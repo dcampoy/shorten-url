@@ -80,7 +80,7 @@ h1,h2,h3,h4,h5,h6 {
 .footer {
   color: lightgrey;
   background-color: var(--c-dark-accent);
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .footer__content {

@@ -139,6 +139,7 @@ $layout-breakpoint-medium: 800px;
   &__item {
     flex: 0 0 33%;
     text-align: center;
+    margin-bottom: 30px;
     @media (max-width: $layout-breakpoint-small) {
       flex: 0 0 100%;
     }
@@ -146,6 +147,7 @@ $layout-breakpoint-medium: 800px;
 
   &__header {
     font-size: var(--fs-small);
+    font-weight: bold;
   }
 
   &__body {
